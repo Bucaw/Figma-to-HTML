@@ -1,0 +1,11 @@
+*{
+    box-sizing: border-box;
+}
+/*1rem = 16px mặc định -> đổi font sang 62,5% để 1rem = 10px*/
+html{
+    font-size: 62.5%;
+}
+/*Khôi phục về font ban đầu*/
+body{
+    font-size: 1.6rem;
+}

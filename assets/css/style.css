@@ -8,4 +8,75 @@ html{
 /*Khôi phục về font ban đầu*/
 body{
     font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+}
+/* ================== Common style =============== */
+a{
+    text-decoration: none;
+}
+.main-content{
+    width: 1170px;
+    max-width: calc(100% - 60px);
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn{
+    display: inline-block;
+    padding: 0 16px;
+    line-height: 50px;
+    min-width: 118px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #FFFFFF;
+    background: #171100;
+    border-radius: 24.5px;
+}
+/* ================== Header ================= */
+.header{
+    background-color: #FFFCF4;
+}
+.header.fixed{
+    position: sticky;
+    top: -28px;
+}
+.header .header-body{
+    display: flex;
+    align-items: center;
+    padding: 36px 0 8px;
+}
+.header-body .nav{
+    margin-left: auto;   
+}
+.header-body .nav ul{
+    display: flex;
+}
+.nav a{
+    position: relative;
+    color: #5F5B53;
+    font-size: 1.6rem;
+    padding: 8px 21px;
+}
+.nav .active a,
+.nav a:hover{
+    color: #171100;
+    /* font-weight: 600; thay thế bằng shadow để tránh giật */
+    text-shadow: .5px 0 0 currentColor;
+}
+.nav .active a::after{
+    display: block;
+    position: absolute;
+    left: 21px;
+    bottom: 6px;
+    content: "";
+    width: 12px;
+    height: 2px;
+    border-radius: 1px;
+    background: #171100;
+}
+.header .sign-up-btn{
+    min-width: 144px;
+}
+.header .action{
+    margin-left: 49px;
 }
